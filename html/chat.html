@@ -1,0 +1,43 @@
+ <!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Education-Manager Chat</title>
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <link rel="icon" type="image/png" href="live-logo.png" />
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+    <div id = "Main">
+      <audio id = "Ding" src = "Ding.mp3"> </audio>
+      <h1 id = "Title">Education-Manager Chat </h1>
+      <div id = "AccessPort">
+        <label id = "NameLabel"> Name:</label><br>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel"> Chatraum:</label><br>
+        <input id = "IDInput" value = "Beispielraum" type = "text"></br><br>
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Verbinden" onclick = "Connect()">
+      </div>
+      <h2 id = "RoomID"> Chatraum : Nicht zugewiesen </h2>
+      <div id = "Chat">
+        <p id = "Message0" class = "Message"> - </p>
+        <p id = "Message1" class = "Message"> - </p>
+        <p id = "Message2" class = "Message"> - </p>
+        <p id = "Message3" class = "Message"> - </p>
+        <p id = "Message4" class = "Message"> - </p>
+        <p id = "Message5" class = "Message"> - </p>
+        <p id = "Message6" class = "Message"> - </p>
+        <p id = "Message7" class = "Message"> - </p>
+        <p id = "Message8" class = "Message"> - </p>
+        <p id = "Message9" class = "Message"> - </p>
+        <label id = "MessageLabel">Nachricht:</label><br>
+        <input id = "ComposedMessage" type = "text"></br><br>
+        <input id = "SendMessage" onclick="Send()" value = "Senden" class = "Button" type = "submit">
+      </div>
+      <br><br>
+    </div>
+  </body>
+</html>
